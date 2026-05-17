@@ -31,7 +31,7 @@ app.use("/api/v1/company", companyRoute);
 app.use("/api/v1/job", jobRoute);
 app.use("/api/v1/application", applicationRoute);
 
-app.listen(PORT, async () => {
+app.listen(PORT, '0.0.0.0', async () => {
     await connectDB();
     console.log(`Server running at port ${PORT}`);
 });
